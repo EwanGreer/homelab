@@ -1,0 +1,47 @@
+- Developer:
+    - GitHub:
+        - abbr: GH
+          href: https://github.com/EwanGreer
+          icon: github-light
+    - RoadMap.sh:
+        - abbr: RD
+          href: https://roadmap.sh
+          icon: mdi-map-marker-path
+    - HomePage:
+      - abbr: HP
+        href: https://gethomepage.dev/
+        icon: homepage
+
+- Social:
+    - Reddit:
+        - abbr: RE
+          href: https://reddit.com/
+          icon: reddit
+
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          href: https://youtube.com/
+          icon: youtube
+    - Twitch:
+        - abbr: TTV
+          href: https://twitch.tv/
+          icon: twitch
+    - MangaNato:
+        - abbr: mn
+          href: https://manganato.com
+          icon: mdi-book
+
+- Shopping:
+  - Amazon:
+    - abbr: AZ
+      href: https://amazon.co.uk
+      icon: amazon-light
+  - AliExpress:
+    - abbr: AE
+      href: https://aliexpress.com
+      icon: aliexpress
+  - Ebay:
+    - abbr: EB
+      href: https://ebay.co.uk
+      icon: ebay 

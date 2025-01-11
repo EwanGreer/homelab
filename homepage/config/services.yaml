@@ -1,0 +1,36 @@
+- Self Hosted:
+  - MySpeed:
+      href: http://pi-server:5216
+      description: Speed tests
+      icon: myspeed
+      server: my-docker
+      container: MySpeed
+      siteMonitor: http://MySpeed:5216
+      widget:
+        type: myspeed
+        url: http://MySpeed:5216
+
+  - Grafana:
+      href: http://pi-server:3333
+      description: grafana
+      icon: grafana
+      server: my-docker
+      container: grafana
+      siteMonitor: http://grafana:3000
+      widget:
+        type: grafana
+        url: http://grafana:3000
+        username: {{HOMEPAGE_VAR_GRAFANA_USERNAME}}
+        password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}
+
+  - UpTimeKuma:
+      href: http://ewan-uptime-kuma-1:3001
+      description: uptime kuma
+      icon: uptime-kuma
+      server: my-docker
+      container: ewan-uptime-kuma-1
+      siteMonitor: http://ewan-uptime-kuma-1:3001
+      widget:
+        type: uptimekuma
+        url: http://ewan-uptime-kuma-1:3001
+        slug: my-services

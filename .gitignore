@@ -1,0 +1,6 @@
+.*
+data
+graphana_*
+grafana_*
+get-docker.sh
+*.log
