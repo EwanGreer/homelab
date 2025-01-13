@@ -24,13 +24,26 @@
         password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}
 
   - UpTimeKuma:
-      href: http://ewan-uptime-kuma-1:3001
+      href: http://uptime-kuma:3001
       description: uptime kuma
       icon: uptime-kuma
       server: my-docker
-      container: ewan-uptime-kuma-1
-      siteMonitor: http://ewan-uptime-kuma-1:3001
+      container: uptime-kuma
+      siteMonitor: http://uptime-kuma:3001
       widget:
         type: uptimekuma
-        url: http://ewan-uptime-kuma-1:3001
+        url: http://uptime-kuma:3001
         slug: my-services
+
+  - Portainer:
+      href: https://pi-server:9443/
+      description: container management
+      icon: portainer
+      server: my-docker
+      contaner: portainer
+      siteMonitor: https://portainer:9443/
+      widget:
+        type: portainer
+        url: https://portainer:9443
+        env: 1
+        key: {{HOMEPAGE_VAR_PORTAINER_API_KEY}}
