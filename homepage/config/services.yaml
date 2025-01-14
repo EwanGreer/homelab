@@ -1,6 +1,6 @@
 - Self Hosted:
   - MySpeed:
-      href: http://pi-server:5216
+      href: http://pi-server.local:5216
       description: Speed tests
       icon: myspeed
       server: my-docker
@@ -11,7 +11,7 @@
         url: http://MySpeed:5216
 
   - Grafana:
-      href: http://pi-server:3333
+      href: http://pi-server.local:3333
       description: grafana
       icon: grafana
       server: my-docker
@@ -24,7 +24,7 @@
         password: {{HOMEPAGE_VAR_GRAFANA_PASSWORD}}
 
   - UpTimeKuma:
-      href: http://uptime-kuma:3001
+      href: http://pi-server.local:3001
       description: uptime kuma
       icon: uptime-kuma
       server: my-docker
@@ -36,7 +36,7 @@
         slug: my-services
 
   - Portainer:
-      href: https://pi-server:9443/
+      href: https://pi-server.local:9443/
       description: container management
       icon: portainer
       server: my-docker
