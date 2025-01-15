@@ -12,6 +12,7 @@ services:
       - SERVICES=1
       - TASKS=1
       - VOLUMES=1
+      - NODES=1
     ports:
       - 127.0.0.1:2375:2375
     volumes:
@@ -31,25 +32,25 @@ services:
     image: ghcr.io/gethomepage/homepage:latest
     container_name: homepage
     env_file:
-      - ~/.env
+      - .env
     ports:
       - 3000:3000
     volumes:
       - ~/homepage/config:/app/config # Make sure your local config directory exists
     restart: unless-stopped
-    
+
   grafana:
     image: grafana/grafana-enterprise
     container_name: grafana
     restart: unless-stopped
     user: "1000"
     environment:
-     - GF_SERVER_ROOT_URL=http://my.grafana.server/
-     - GF_INSTALL_PLUGINS=grafana-clock-panel
+      - GF_SERVER_ROOT_URL=http://my.grafana.server/
+      - GF_INSTALL_PLUGINS=grafana-clock-panel
     ports:
-     - '3333:3000'
+      - "3333:3000"
     volumes:
-     - './graphana_data:/var/lib/grafana'
+      - "./graphana_data:/var/lib/grafana"
 
   uptime-kuma:
     image: louislam/uptime-kuma:1
