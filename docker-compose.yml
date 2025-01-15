@@ -13,6 +13,7 @@ services:
       - TASKS=1
       - VOLUMES=1
       - NODES=1
+      - SWARM=1
     ports:
       - 127.0.0.1:2375:2375
     volumes:
